@@ -1,5 +1,6 @@
 # Kinga Zajdel
 # AT4BR final project
+import csv
 
 from Bio import Entrez, SeqIO
 from collections import Counter
@@ -9,7 +10,7 @@ counting_CDS = 0
 segments_CDS = []
 codons_list = []
 counted_codons = {}
-list_of_counted_aminoacids = {}
+list_of_counted_aminoacids = []
 genome_id = ["OR682571"]
 
 # table for translating the codons into amino acids
@@ -130,7 +131,13 @@ counted_codons['ATG'] -= counting_CDS
 for k in counted_codons.keys():
     for a in table_of_codons.keys():
         if k == a:
-            list_of_counted_aminoacids[table_of_codons[a]] = [k, counted_codons[k]]
+            temp_list = [table_of_codons[a], k, counted_codons[k]]
+            list_of_counted_aminoacids.append(temp_list)
             # list_of_counted_aminoacids[k] = [table_of_codons[a], counted_codons[k]]
 
 # print(list_of_counted_aminoacids)
+
+with open('test1.csv', 'w', newline='') as csvfile:
+    my_writer = csv.writer(csvfile, delimiter=',')
+    my_writer.writerow(['aa', 'codon', 'occurrence'])
+    my_writer.writerows(list_of_counted_aminoacids)
