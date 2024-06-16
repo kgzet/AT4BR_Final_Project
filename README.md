@@ -2,7 +2,7 @@
 ### Kinga Zajdel
 
 ### Testing codon usage bias on the example of cat virus: FeLV (Feline Leukemia Virus)
-Many of amino acids are coded by more than one nucleotide triplet. Silent mutations name such changes in DNA sequence that although altering a nucleotide(s) in the triplet, don't affect what amino acids are produced on the basis of the sequence. However, a change in the triplet may influence mRNA stability and thus alter number of protein molecules produced. Some findings suggest that those mutations aren't in fact silent and they can actually influence the gene expression.
+Nearly all of amino acids are coded by more than one nucleotide triplet. The usage of triplets is not random - there is preference specific to different species. Silent mutations name such changes in DNA sequence that although altering a nucleotide(s) in the triplet, don't affect what amino acids are produced on the basis of the sequence. However, a change in the triplet may influence mRNA stability and thus alter number of protein molecules produced. Some findings suggest that those mutations aren't in fact silent and they can actually influence the gene expression. <br>
 I've chosen FeLV because it's a small genome, so data shouldn't load much computer's memory. In the middle of the first sequence there is a stop triplet (TAG). In some organisms it can encode Pyrrolysine but not in eukaryotes. <br>
 My code should work also for bigger genomes (except the additional test which requires manual adjustment). <br>
 
@@ -14,6 +14,7 @@ Secondly, R Shiny Web App draws the data from the .csv file. User can choose ami
 * https://www.ncbi.nlm.nih.gov/nuccore/OR682571.1
 * "Coding-Sequence Determinants of Gene Expression in Escherichia coli", Grzegorz Kudla, Andrew W. Murray, David Tollervey, Joshua B. Plotkin
 * "The codon adaptation index - a measure of directional synonymous codon usage bias, and its potential applications", Paul M. Sharp, Wen-Hsiung Li
-* https://en.wikipedia.org/wiki/Pyrrolysine <br>
+* "Codon usage bias", Sujatha Thankeswaran Parvathy, Varatharajalu Udayasuriyan, Vijaipal Bhadana, https://pubmed.ncbi.nlm.nih.gov/34822069/
+* https://en.wikipedia.org/wiki/Pyrrolysine
 
 /*No AI used./*
