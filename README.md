@@ -3,7 +3,7 @@
 
 ### Testing codon usage bias on the example of cat virus: FeLV (Feline Leukemia Virus)
 Many of amino acids are coded by more than one nucleotide triplet. Silent mutations name such changes in DNA sequence that although altering a nucleotide(s) in the triplet, don't affect what amino acids are produced on the basis of the sequence. However, a change in the triplet may influence mRNA stability and thus alter number of protein molecules produced. Some findings suggest that those mutations aren't in fact silent and they can actually influence the gene expression.
-I've chosen FeLV because it's a small genome, so data shouldn't load much computer's memory. In the middle of the first sequence there is a stop triplet (TAG). In some organisms it can encode Pyrrolysine but not in eukaryotes. 
+I've chosen FeLV because it's a small genome, so data shouldn't load much computer's memory. In the middle of the first sequence there is a stop triplet (TAG). In some organisms it can encode Pyrrolysine but not in eukaryotes. <br>
 My code should work also for bigger genomes (except the additional test which requires manual adjustment).
 
 ### How it works
