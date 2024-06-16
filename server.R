@@ -22,7 +22,7 @@ table_of_codons <- read_csv("data/codon_usage.csv")
 # sorting the table according to amino acid name
 new_table_of_codons <- table_of_codons |> dplyr::arrange(aa, occurrence)
 # preparing table with amino acids only, with no duplicates (for select input list)
-# choices <- distinct(new_table_of_codons, aa)
+choices <- distinct(new_table_of_codons, aa)
 
 # Define server logic required to draw a bar plot
 function(input, output, session) {
