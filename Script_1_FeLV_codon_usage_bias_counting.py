@@ -15,70 +15,70 @@ genome_id = ["OR682571"]
 
 # table for translating the codons into amino acids
 table_of_codons = {
-    'AAA': 'K',    # Lysine
-    'AAC': 'N',    # Asparagine
-    'AAG': 'K',    # Lysine
-    'AAT': 'N',    # Asparagine
-    'ACA': 'T',    # Threonine
-    'ACC': 'T',    # Threonine
-    'ACG': 'T',    # Threonine
-    'ACT': 'T',    # Threonine
-    'AGA': 'R',    # Arginine
-    'AGC': 'S',    # Serine
-    'AGG': 'R',    # Arginine
-    'AGT': 'S',    # Serine
-    'ATA': 'I',    # Isoleucine
-    'ATC': 'I',    # Isoleucine
-    'ATG': 'M',    # Methionine
-    'ATT': 'I',    # Isoleucine
-    'CAA': 'Q',    # Glutamine
-    'CAC': 'H',    # Histidine
-    'CAG': 'Q',    # Glutamine
-    'CAT': 'H',    # Histidine
-    'CCA': 'P',    # Proline
-    'CCC': 'P',    # Proline
-    'CCG': 'P',    # Proline
-    'CCT': 'P',    # Proline
-    'CGA': 'R',    # Arginine
-    'CGC': 'R',    # Arginine
-    'CGG': 'R',    # Arginine
-    'CGT': 'R',    # Arginine
-    'CTA': 'L',    # Leucine
-    'CTC': 'L',    # Leucine
-    'CTG': 'L',    # Leucine
-    'CTT': 'L',    # Leucine
-    'GAA': 'E',    # Glutamate
-    'GAC': 'D',    # Aspartate
-    'GAG': 'E',    # Glutamate
-    'GAT': 'D',    # Aspartate
-    'GCA': 'A',    # Alanine
-    'GCC': 'A',    # Alanine
-    'GCG': 'A',    # Alanine
-    'GCT': 'A',    # Alanine
-    'GGA': 'G',    # Glycine
-    'GGC': 'G',    # Glycine
-    'GGG': 'G',    # Glycine
-    'GGT': 'G',    # Glycine
-    'GTA': 'V',    # Valine
-    'GTC': 'V',    # Valine
-    'GTG': 'V',    # Valine
-    'GTT': 'V',    # Valine
-    'TAA': '*',    # Stop
-    'TAC': 'Y',    # Tyrosine
-    'TAG': '*',    # Stop
-    'TAT': 'Y',    # Tyrosine
-    'TCA': 'S',    # Serine
-    'TCC': 'S',    # Serine
-    'TCG': 'S',    # Serine
-    'TCT': 'S',    # Serine
-    'TGA': '*',    # Stop
-    'TGC': 'C',    # Cystein
-    'TGG': 'W',    # Tryptophane
-    'TGT': 'C',    # Cysteine
-    'TTA': 'L',    # Leucine
-    'TTC': 'F',    # Phenylalanine
-    'TTG': 'L',    # Leucine
-    'TTT': 'F'    # Phenylalanine
+    'AAA': 'K',     # Lysine
+    'AAC': 'N',     # Asparagine
+    'AAG': 'K',     # Lysine
+    'AAT': 'N',     # Asparagine
+    'ACA': 'T',     # Threonine
+    'ACC': 'T',     # Threonine
+    'ACG': 'T',     # Threonine
+    'ACT': 'T',     # Threonine
+    'AGA': 'R',     # Arginine
+    'AGC': 'S',     # Serine
+    'AGG': 'R',     # Arginine
+    'AGT': 'S',     # Serine
+    'ATA': 'I',     # Isoleucine
+    'ATC': 'I',     # Isoleucine
+    'ATG': 'M',     # Methionine
+    'ATT': 'I',     # Isoleucine
+    'CAA': 'Q',     # Glutamine
+    'CAC': 'H',     # Histidine
+    'CAG': 'Q',     # Glutamine
+    'CAT': 'H',     # Histidine
+    'CCA': 'P',     # Proline
+    'CCC': 'P',     # Proline
+    'CCG': 'P',     # Proline
+    'CCT': 'P',     # Proline
+    'CGA': 'R',     # Arginine
+    'CGC': 'R',     # Arginine
+    'CGG': 'R',     # Arginine
+    'CGT': 'R',     # Arginine
+    'CTA': 'L',     # Leucine
+    'CTC': 'L',     # Leucine
+    'CTG': 'L',     # Leucine
+    'CTT': 'L',     # Leucine
+    'GAA': 'E',     # Glutamate
+    'GAC': 'D',     # Aspartate
+    'GAG': 'E',     # Glutamate
+    'GAT': 'D',     # Aspartate
+    'GCA': 'A',     # Alanine
+    'GCC': 'A',     # Alanine
+    'GCG': 'A',     # Alanine
+    'GCT': 'A',     # Alanine
+    'GGA': 'G',     # Glycine
+    'GGC': 'G',     # Glycine
+    'GGG': 'G',     # Glycine
+    'GGT': 'G',     # Glycine
+    'GTA': 'V',     # Valine
+    'GTC': 'V',     # Valine
+    'GTG': 'V',     # Valine
+    'GTT': 'V',     # Valine
+    'TAA': '*',     # Stop
+    'TAC': 'Y',     # Tyrosine
+    'TAG': '*',     # Stop
+    'TAT': 'Y',     # Tyrosine
+    'TCA': 'S',     # Serine
+    'TCC': 'S',     # Serine
+    'TCG': 'S',     # Serine
+    'TCT': 'S',     # Serine
+    'TGA': '*',     # Stop
+    'TGC': 'C',     # Cystein
+    'TGG': 'W',     # Tryptophane
+    'TGT': 'C',     # Cysteine
+    'TTA': 'L',     # Leucine
+    'TTC': 'F',     # Phenylalanine
+    'TTG': 'L',     # Leucine
+    'TTT': 'F'      # Phenylalanine
 }
 
 # Entrez from Biopython enables downloading data from such sites like NCBI
@@ -142,23 +142,42 @@ with open('codon_usage.csv', 'w', newline='') as csvfile:
     my_writer.writerow(['aa', 'codon', 'occurrence'])
     my_writer.writerows(list_of_counted_aminoacids)
 
-# testing my codons
+# testing my codons using original sequences from NCBI website
+# two ranges for two CDS: 687-6057 or 5999-7928
 test_list = []
-# two ranges for two CDS
-# for i in range(687, 6057, 3):
-for i in range(5999, 7928, 3):
-    # building the test codon
-    test_codon = whole_sequence[i] + whole_sequence[i+1] + whole_sequence[i+2]
-    for a in table_of_codons.keys():
-        if test_codon == a:
-            bla = [table_of_codons[a], test_codon, counted_codons[test_codon]]
-            test_list.append(bla)
+# choose one of the below options to conduct a test for first or second CDS
+test_no = int(input("choose test number: 1 or 2:\n"))
 
-# these are sequences from NCBI website
-# test_sequence = "MSGASSGTAIGAELFGISSVLGEYRVLIGDEGAGPSRSPSEVSFSVWYRSRAARLVVLCLVTSFLVPCLTFLIAEAVMGQTVTTPLSLTLDHWSEVRARAHNQGVEVRKKKWVTLCEAEWVMMNIGWPREGTFSLDNISQVEKKIFAPGPHGHPDQVPYITTWRSLATDPPSWVRPFLPPPKPPTPLPQPLSPQPSAPPTSSLYPVLPKPDPPKPPVLPPDPSSPLIDLLTEEPPPYPGGHGPPPSGPRTPAASPIASRLRERRENPAEESQALPLREGPNNRPQYWPFSASDLYNWKSHNPPFSQDPVALTNLIESILVTHQPTWDDCQQLLQALLTAEERQRVLLEARKQVPGEDGRPTQLPNVIDETFPLTRPNWDFATPAGREHLRLYRQLLLAGLRGAARRPTNLAQVKQVVQGKEETPAAFLERLKEAYRMYTPYDPEDPGQAASVILSFIYQSSPDIRNKLQRLEGLQGFTLSDLLKEAEKIYNKRETPEEREERLWQRQEERDKKRHKEMTKVLATVVAQNRDRDREESKLGDQRKIPLGKDQCAYCKEKGHWVRDCPKRPRKKPANSTLLNLEDXESQGQDPPPEPRITLRIGGQPVTFLVDTGAQHSVLTRPDGPLSDRTALVQGATGSRNYRWTTDRRVQLATGKETHSFLYVPECPYPLLGRDLLTKLKAQIHFTGEGANVVGPKGLPLQVLTLQLEEEYRLFEPESTLKQEMDIWLKNFPQAWAETGGIGMAHCQAPVLIQLKATATPISIRQYPMPHEAYQGIKPHIRRMLDQGILKPCRSPWNTPLLPVKKPGTEDYRPVQDLREVNKRVEDIHPTVPNPYNLLSTLPPSHPWYTVLDLKDAFFCLRLHPESQLLFAFEWKDPEIGLSGQLTWTRLPQGFKNSPTLFDEALHSDLADFRVRYPALVLLQYVDDLLLAAATKTECLEGTKALLETLGNKGYRASAKKAQICLQKVTYLGYSLEDGQRWLTKARKEAILSIPVPKNPRQVREFLGTAGYCRLWIPGFAELAAPLYPLTRPGTLFQWETKQQLAFENIKKALLSSPALGLPDITKPFELFIDENSGFAKGVLVQKLGPWKRPVAYLSKKLDTVASGWPPCLRMVAAIAILVKDADKLTLGQPLTILTSHPVEALVRQPPNKWLSNARMTHYQAMLLDAERVHFGPTVSLNPATLLPLPNEESHHDCLLVLAETHGTRPDLTDQPLPDADLTWYTDGSSFIRNGERKAGAAVTTESEVIWAASLPPGTSAQRAELIALTQALKMAKGKKLTVYTDSRYAFATAHVHGEIYRRRGLLTSEGKEIKNKNEILALLEALFLPKRLSIIHCPGHQKGDSPQAKGNRLADDTAKKAATETQSSLTILPTELIEGPKRPPWEYDNSDLDLVQKLEAHYEPKRGTWEYQGKTIMPEKYAKELISHLHKLTHLSARKMKTLLEREETGFYLPNRDLHLRQVTESCRACAQINAGKIKFGPDVRARGHRPGIHWEIDFTEIKPGMYGYKYLLVFIDTFSGWAEAYPAKHETAKVVAKKLLEEIFPRYGIPQVLGSDNGPAFISQVSQSVATLLGINWKLHCAYRPQSSGQVERMNRSIKETLTKLTLETGSKDWVLLLPLVLYRVRNTPGPHGLTPFEILYGAPPPLAHFFDADISSFATSPTMQAHLRALQLVQEEIQRPLAAAYREKLKTPVVPHPFKPGDSVWVRRHQTKNLEPRWKGPHIVLLTTPTALKVDGVAAWIHASHVKAAGPTTNQDPSDDPSSDDPSRWRVQRTQNPLKIRLSRGT"
-test_sequence = "MEGSTHPKPSKDKTFSWDLMILVGVLLRLDVGMANPSPHQVHNVTWVITNVQKNSQANATSMLGTLTDAYPTLHVDLCDLVGDTWEPIVLNPNNVKHGARYSSSKYGCKTTDRKKQQQTYPFYVCPGHTPSMGPKGTHCGGAQDGFCAAWGCETTGEAWWKPTSSWDYITVKRGSSQDNSCEGKCNPLVLQFTQKGRQASWDGPKMWGLRLYRTGYDPVALFTVSRQVSTITPPQAMGPNLVLPDQKPPSRQSQTESKVATQKPQTNGSTPRSVAPATMGPKRIGTGDRLVNLVQGTYLALNATDPNKTRDCWLCLVSRPPYYEGIAILGNYSNQTNPPSSCLSTPQHKLTISEVSGQGLCIGTVPKTHQALCNKTQQGHTGAHYLAAPNGTYWACNTGLTPCISMAVLNWTSDFCVLIELWPRVTYHQPEYVYTHFDKAVRFRREPISLTVALMLGGLTVGGIAAGVGTGTKALLETAQFRQLQMAMHTDIQALEESISALERSLTSLSEVVLQNRRGLDILFLQEGGLCAALKEECCFYADHTGLVRDNMAKLRERLKQRQQLFDSQQGWFEGWFNKSPWFTTLISSIMGPLLILLLILLFGPCILNRLVQFVKDRISVVQALILTQQYQQIKQYDPDQP"
-for t, s in zip(test_sequence, test_list):
-    print(t, " -- ", s)
-    print(t == s[0])
-# the NCBI sequence doesn't contain the stop codon
-print(test_list[len(test_sequence)])
+# test no 1
+if test_no == 1:
+    for i in range(687, 6057, 3):
+        # building the test codon
+        test_codon = whole_sequence[i] + whole_sequence[i+1] + whole_sequence[i+2]
+        for a in table_of_codons.keys():
+            if test_codon == a:
+                bla = [table_of_codons[a], test_codon, counted_codons[test_codon]]
+                test_list.append(bla)
+    # original sequence from NCBI website
+    test_sequence = "MSGASSGTAIGAELFGISSVLGEYRVLIGDEGAGPSRSPSEVSFSVWYRSRAARLVVLCLVTSFLVPCLTFLIAEAVMGQTVTTPLSLTLDHWSEVRARAHNQGVEVRKKKWVTLCEAEWVMMNIGWPREGTFSLDNISQVEKKIFAPGPHGHPDQVPYITTWRSLATDPPSWVRPFLPPPKPPTPLPQPLSPQPSAPPTSSLYPVLPKPDPPKPPVLPPDPSSPLIDLLTEEPPPYPGGHGPPPSGPRTPAASPIASRLRERRENPAEESQALPLREGPNNRPQYWPFSASDLYNWKSHNPPFSQDPVALTNLIESILVTHQPTWDDCQQLLQALLTAEERQRVLLEARKQVPGEDGRPTQLPNVIDETFPLTRPNWDFATPAGREHLRLYRQLLLAGLRGAARRPTNLAQVKQVVQGKEETPAAFLERLKEAYRMYTPYDPEDPGQAASVILSFIYQSSPDIRNKLQRLEGLQGFTLSDLLKEAEKIYNKRETPEEREERLWQRQEERDKKRHKEMTKVLATVVAQNRDRDREESKLGDQRKIPLGKDQCAYCKEKGHWVRDCPKRPRKKPANSTLLNLEDXESQGQDPPPEPRITLRIGGQPVTFLVDTGAQHSVLTRPDGPLSDRTALVQGATGSRNYRWTTDRRVQLATGKETHSFLYVPECPYPLLGRDLLTKLKAQIHFTGEGANVVGPKGLPLQVLTLQLEEEYRLFEPESTLKQEMDIWLKNFPQAWAETGGIGMAHCQAPVLIQLKATATPISIRQYPMPHEAYQGIKPHIRRMLDQGILKPCRSPWNTPLLPVKKPGTEDYRPVQDLREVNKRVEDIHPTVPNPYNLLSTLPPSHPWYTVLDLKDAFFCLRLHPESQLLFAFEWKDPEIGLSGQLTWTRLPQGFKNSPTLFDEALHSDLADFRVRYPALVLLQYVDDLLLAAATKTECLEGTKALLETLGNKGYRASAKKAQICLQKVTYLGYSLEDGQRWLTKARKEAILSIPVPKNPRQVREFLGTAGYCRLWIPGFAELAAPLYPLTRPGTLFQWETKQQLAFENIKKALLSSPALGLPDITKPFELFIDENSGFAKGVLVQKLGPWKRPVAYLSKKLDTVASGWPPCLRMVAAIAILVKDADKLTLGQPLTILTSHPVEALVRQPPNKWLSNARMTHYQAMLLDAERVHFGPTVSLNPATLLPLPNEESHHDCLLVLAETHGTRPDLTDQPLPDADLTWYTDGSSFIRNGERKAGAAVTTESEVIWAASLPPGTSAQRAELIALTQALKMAKGKKLTVYTDSRYAFATAHVHGEIYRRRGLLTSEGKEIKNKNEILALLEALFLPKRLSIIHCPGHQKGDSPQAKGNRLADDTAKKAATETQSSLTILPTELIEGPKRPPWEYDNSDLDLVQKLEAHYEPKRGTWEYQGKTIMPEKYAKELISHLHKLTHLSARKMKTLLEREETGFYLPNRDLHLRQVTESCRACAQINAGKIKFGPDVRARGHRPGIHWEIDFTEIKPGMYGYKYLLVFIDTFSGWAEAYPAKHETAKVVAKKLLEEIFPRYGIPQVLGSDNGPAFISQVSQSVATLLGINWKLHCAYRPQSSGQVERMNRSIKETLTKLTLETGSKDWVLLLPLVLYRVRNTPGPHGLTPFEILYGAPPPLAHFFDADISSFATSPTMQAHLRALQLVQEEIQRPLAAAYREKLKTPVVPHPFKPGDSVWVRRHQTKNLEPRWKGPHIVLLTTPTALKVDGVAAWIHASHVKAAGPTTNQDPSDDPSSDDPSRWRVQRTQNPLKIRLSRGT"
+    for t, s in zip(test_sequence, test_list):
+        print(t, " -- ", s)
+        print(t == s[0])
+    # the NCBI sequence doesn't contain the stop triplet, so I have to print it additionally
+    print(test_list[len(test_sequence)])
+
+# test no 2
+elif test_no == 2:
+    for i in range(5999, 7928, 3):
+        # building the test codon
+        test_codon = whole_sequence[i] + whole_sequence[i+1] + whole_sequence[i+2]
+        for a in table_of_codons.keys():
+            if test_codon == a:
+                bla = [table_of_codons[a], test_codon, counted_codons[test_codon]]
+                test_list.append(bla)
+    # original sequence from NCBI website
+    test_sequence = "MEGSTHPKPSKDKTFSWDLMILVGVLLRLDVGMANPSPHQVHNVTWVITNVQKNSQANATSMLGTLTDAYPTLHVDLCDLVGDTWEPIVLNPNNVKHGARYSSSKYGCKTTDRKKQQQTYPFYVCPGHTPSMGPKGTHCGGAQDGFCAAWGCETTGEAWWKPTSSWDYITVKRGSSQDNSCEGKCNPLVLQFTQKGRQASWDGPKMWGLRLYRTGYDPVALFTVSRQVSTITPPQAMGPNLVLPDQKPPSRQSQTESKVATQKPQTNGSTPRSVAPATMGPKRIGTGDRLVNLVQGTYLALNATDPNKTRDCWLCLVSRPPYYEGIAILGNYSNQTNPPSSCLSTPQHKLTISEVSGQGLCIGTVPKTHQALCNKTQQGHTGAHYLAAPNGTYWACNTGLTPCISMAVLNWTSDFCVLIELWPRVTYHQPEYVYTHFDKAVRFRREPISLTVALMLGGLTVGGIAAGVGTGTKALLETAQFRQLQMAMHTDIQALEESISALERSLTSLSEVVLQNRRGLDILFLQEGGLCAALKEECCFYADHTGLVRDNMAKLRERLKQRQQLFDSQQGWFEGWFNKSPWFTTLISSIMGPLLILLLILLFGPCILNRLVQFVKDRISVVQALILTQQYQQIKQYDPDQP"
+    for t, s in zip(test_sequence, test_list):
+        print(t, " -- ", s)
+        print(t == s[0])
+    # the NCBI sequence doesn't contain the stop triplet, so I have to print it additionally
+    print(test_list[len(test_sequence)])
