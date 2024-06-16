@@ -20,9 +20,10 @@ fluidPage(
 
     # Sidebar with a slider input for number of bins
     fluidRow(
+      
       sidebarPanel(
-        # selectInput("select_aa", "Select an amino acid:", choices=""),
-        selectInput(inputId = "select_aa", label = "Select an amino acid:", choices = choices),
+        selectInput("select_aa", "Select an amino acid:", choices=""),
+        # selectInput(inputId = "select_aa", label = "Select an amino acid:", choices = choices),
         radioButtons(inputId = "radio_color", label = "Choose color:", choices = c("grey", "darkred", "violet", "lightblue")),
         radioButtons(inputId = "radio_border", label = "Choose border:", choices = c("black", "sienna", "plum4", "lightpink")),
         radioButtons(inputId = "radio_data", label = "Choose data to show:", choices = c("numbers", "percentage")),
@@ -32,5 +33,8 @@ fluidPage(
       mainPanel(
         plotlyOutput("distPlot")
       )
+      
     )
 )
+
+# No AI used.
