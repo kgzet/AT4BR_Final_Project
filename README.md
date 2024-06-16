@@ -11,9 +11,9 @@ Firstly, the Python script downloads the genome (sequence + additional data in G
 Secondly, R Shiny Web App draws the data from the .csv file. User can choose amino acid which codon bias they want to see and kind of data representation: in number of occurrences in the genome or percentage of each triplet (100% is how many triplets were used to encode given amino acid). Adjusting the plot decoration is provided as well.
 
 ### Sources
-https://www.ncbi.nlm.nih.gov/nuccore/OR682571.1 <br>
-"Coding-Sequence Determinants of Gene Expression in Escherichia coli", Grzegorz Kudla, Andrew W. Murray, David Tollervey, Joshua B. Plotkin <br>
-"The codon adaptation index - a measure of directional synonymous codon usage bias, and its potential applications", Paul M. Sharp, Wen-Hsiung Li <br>
-https://en.wikipedia.org/wiki/Pyrrolysine <br>
+* https://www.ncbi.nlm.nih.gov/nuccore/OR682571.1
+* "Coding-Sequence Determinants of Gene Expression in Escherichia coli", Grzegorz Kudla, Andrew W. Murray, David Tollervey, Joshua B. Plotkin
+* "The codon adaptation index - a measure of directional synonymous codon usage bias, and its potential applications", Paul M. Sharp, Wen-Hsiung Li
+* https://en.wikipedia.org/wiki/Pyrrolysine <br>
 
 /*No AI used./*
