@@ -6,12 +6,79 @@ from collections import Counter
 import csv
 
 # preparing variables for future use
-counting_CDS = 0
-segments_CDS = []
-codons_list = []
-counted_codons = {}
-list_of_counted_aminoacids = []
-genome_id = ["OR682571"]
+genome_id = ["OR682571"]        # put here IDs of genomes to examine
+counting_CDS = 0        # how many CDS there are, this will be used to count Methionines
+segments_CDS = []       # coding sequences sliced from the whole genome
+codons_list = []        # list of codons existing in the NCBI sequence
+list_of_counted_aminoacids = []     # final list to export into .csv file
+
+# dictionary of codon : how many; setting a list of every possible triplet with starting value = 0
+counted_codons = {
+    'AAA': 0,
+    'AAC': 0,
+    'AAG': 0,
+    'AAT': 0,
+    'ACA': 0,
+    'ACC': 0,
+    'ACG': 0,
+    'ACT': 0,
+    'AGA': 0,
+    'AGC': 0,
+    'AGG': 0,
+    'AGT': 0,
+    'ATA': 0,
+    'ATC': 0,
+    'ATG': 0,
+    'ATT': 0,
+    'CAA': 0,
+    'CAC': 0,
+    'CAG': 0,
+    'CAT': 0,
+    'CCA': 0,
+    'CCC': 0,
+    'CCG': 0,
+    'CCT': 0,
+    'CGA': 0,
+    'CGC': 0,
+    'CGG': 0,
+    'CGT': 0,
+    'CTA': 0,
+    'CTC': 0,
+    'CTG': 0,
+    'CTT': 0,
+    'GAA': 0,
+    'GAC': 0,
+    'GAG': 0,
+    'GAT': 0,
+    'GCA': 0,
+    'GCC': 0,
+    'GCG': 0,
+    'GCT': 0,
+    'GGA': 0,
+    'GGC': 0,
+    'GGG': 0,
+    'GGT': 0,
+    'GTA': 0,
+    'GTC': 0,
+    'GTG': 0,
+    'GTT': 0,
+    'TAA': 0,
+    'TAC': 0,
+    'TAG': 0,
+    'TAT': 0,
+    'TCA': 0,
+    'TCC': 0,
+    'TCG': 0,
+    'TCT': 0,
+    'TGA': 0,
+    'TGC': 0,
+    'TGG': 0,
+    'TGT': 0,
+    'TTA': 0,
+    'TTC': 0,
+    'TTG': 0,
+    'TTT': 0
+}
 
 # table for translating the codons into amino acids
 table_of_codons = {
@@ -78,7 +145,7 @@ table_of_codons = {
     'TTA': 'L',     # Leucine
     'TTC': 'F',     # Phenylalanine
     'TTG': 'L',     # Leucine
-    'TTT': 'F'      # Phenylalanine
+    'TTT': 'F'     # Phenylalanine
 }
 
 # Entrez from Biopython enables downloading data from such sites like NCBI
@@ -100,16 +167,10 @@ for feat in sequence_info.features:
         # the list of CDS' starts and ends; one list element = one CDS
         segments_CDS.append([int(feat.location.start), int(feat.location.end)])
 # print(segments_CDS)
-# print(whole_sequence[687], whole_sequence[6057], '\n')
-i = 0
-# !!
-# segments_CDS = []
 
 # loop for checking every pair of start and stop
 # "s" stands for single CDS
 for s in segments_CDS:
-    # print(s[0],"\n",s[1])
-    # print(s)
     # "i" is an index according to whole sequence, in range from the start to the end of the CDS
     # range(start, stop, step)
     for i in range(s[0], s[1], 3):
@@ -119,9 +180,14 @@ for s in segments_CDS:
         codons_list.append(single_codon)
 
 # print(codons_list)
+
 # Counter builds a dictionary with number of occurrences as values
-counted_codons = dict(Counter(codons_list))
+# .update() method allows to change values in the dictionary, leaving the unchanged ones
+# if any triplet wasn't used in the given genome there will be corresponding value of 0
+counted_codons.update(dict(Counter(codons_list)))
+
 # print(counted_codons, '\n')
+
 # now I need to reduce the number of Methionines by how many CDS I have = how many start codons
 counted_codons['ATG'] -= counting_CDS
 # print(counted_codons)
@@ -146,7 +212,10 @@ with open('codon_usage.csv', 'w', newline='') as csvfile:
 # two ranges for two CDS: 687-6057 or 5999-7928
 test_list = []
 # choose one of the below options to conduct a test for first or second CDS
-test_no = int(input("choose test number: 1 or 2:\n"))
+try:
+    test_no = int(input("choose test number: 1 or 2:\n"))
+except ValueError:
+    test_no = 0
 
 # test no 1
 if test_no == 1:
@@ -181,3 +250,6 @@ elif test_no == 2:
         print(t == s[0])
     # the NCBI sequence doesn't contain the stop triplet, so I have to print it additionally
     print(test_list[len(test_sequence)])
+
+else:
+    pass
