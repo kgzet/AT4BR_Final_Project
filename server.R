@@ -28,12 +28,12 @@ choices <- distinct(new_table_of_codons, aa)
 function(input, output, session) {
   
   # updateSelectInput to save the memory
-  select_ed_aa <- updateSelectInput(session ,"select_aa", "Chose an amino acid", choices$aa)
+  chosen_aa <- updateSelectInput(session ,"select_aa", "Chose an amino acid", choices$aa)
   
   # creating variables that will be used for plots
-  x_axis_variable <- "nucleotide triplets of"
-  plot_title_numbers <- "bar plot of codon usage bias for triplet coding"
-  plot_title_percent <- "codon usage bias in percents for triplet coding"
+  x_axis_variable <- "nucleotide triplet(s) of"
+  plot_title_numbers <- "bar plot of codon usage bias for triplet(s) coding"
+  plot_title_percent <- "codon usage bias in percents for triplet(s) coding"
   
   
   output$distPlot <- renderPlotly({
