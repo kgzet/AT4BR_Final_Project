@@ -19,15 +19,14 @@ library(plotly)
 
 table_of_codons <- read_csv("data/codon_usage.csv")
 new_table_of_codons <- table_of_codons |> dplyr::arrange(aa, occurrence)
-choices <- distinct(new_table_of_codons, aa)
+# choices <- distinct(new_table_of_codons, aa)
 
 # Define server logic required to draw a bar plot
 function(input, output, session) {
       
       # selected_aa <- 'A'
       # col = input$radio_color
-      # selected_aa <- updateSelectInput(session ,"select_aa", "Chose an amino acid", choices$aa)
-
+      select_ed_aa <- updateSelectInput(session ,"select_aa", "Chose an amino acid", choices$aa)
       x_axis_variable <- "nucleotide triplets of "
       plot_title_numbers <- "bar plot of codon usage bias for amino acid:"
       plot_title_percent <- "codon usage bias in percents for amino acid "
@@ -75,3 +74,5 @@ function(input, output, session) {
     })
 
 }
+
+# No AI used.
