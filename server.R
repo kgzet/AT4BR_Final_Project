@@ -31,9 +31,9 @@ function(input, output, session) {
       select_ed_aa <- updateSelectInput(session ,"select_aa", "Chose an amino acid", choices$aa)
       
       # creating variables that will be used for plots
-      x_axis_variable <- "nucleotide triplets of "
-      plot_title_numbers <- "bar plot of codon usage bias for amino acid:"
-      plot_title_percent <- "codon usage bias in percents for amino acid:"
+      x_axis_variable <- "nucleotide triplets of"
+      plot_title_numbers <- "bar plot of codon usage bias for triplet coding"
+      plot_title_percent <- "codon usage bias in percents for triplet coding"
       
       
       output$distPlot <- renderPlotly({
@@ -44,7 +44,32 @@ function(input, output, session) {
         name_of_data <- input$radio_data
         # table with only one amino acid, basis for the shown plot
         one_aa_table <- new_table_of_codons |> filter(aa == selected_aa)
-      
+        
+        # a dictionary of amino acid shortcuts -> full names, for more clarity of the plots
+        amino_name = switch(   
+          selected_aa,   
+          "A" = "Alanine",   
+          "C" = "Cysteine",   
+          "D" = "Aspartic acid",   
+          "E" = "Glutamic acid", 
+          "F" = "Phenylalanine", 
+          "G" = "Glycine",
+          "H" = "Histidine",
+          "I" = "Isoleucine",
+          "K" = "Lysine",
+          "L" = "Leucine",
+          "M" = "Methionine",
+          "N" = "Asparagine",
+          "P" = "Proline",
+          "Q" = "Glutamine",
+          "R" = "Arginine",
+          "S" = "Serine",
+          "T" = "Threonine",
+          "V" = "Valine",
+          "W" = "Tryptophan",
+          "Y" = "Tyrosine",
+          "*" = "stop"
+        )
         
         # depending on user's choice one of the given plots will be shown
         # radio button ID: radio_data
@@ -53,7 +78,7 @@ function(input, output, session) {
           final_plot <- one_aa_table |>
           ggplot(one_aa_table, mapping = aes(x = codon, y = occurrence)) +    # using table with only one chosen aa
           geom_bar(stat = "identity", width = 0.8, col = input$radio_border, fill = input$radio_color) +  # user chooses decoration
-          labs(x = paste(x_axis_variable, selected_aa), y = "occurrence", title = paste(plot_title_numbers, selected_aa)) +
+          labs(x = paste(x_axis_variable, selected_aa), y = "occurrence", title = paste(plot_title_numbers, amino_name)) +
             # paste()allows to concatenate string variables, so labels will contain actual aa name 
           theme_minimal()
           
@@ -75,7 +100,7 @@ function(input, output, session) {
             ggplot(percent_occurrence, mapping = aes(x = codon, y = percentage)) + 
             # geom_bar(stat = "identity", width = 0.8, col = "lightpink", fill = "orchid") +
             geom_bar(stat = "identity", width = 0.8, col = input$radio_border, fill = input$radio_color) +  # user chooses decoration
-            labs(x = paste(x_axis_variable, selected_aa), y = "percentage (%)", title = paste(plot_title_percent, selected_aa)) +
+            labs(x = paste(x_axis_variable, selected_aa), y = "percentage (%)", title = paste(plot_title_percent, amino_name)) +
               # paste()allows to concatenate string variables, so labels will contain actual aa name 
             theme_minimal()
           
